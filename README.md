@@ -64,7 +64,7 @@ Here are the specific insights I gained from the EDA:
 ## :dart:  Challenges and Limitations
 I encountered several challenges and limitations:
 - The dataset required specific encoding (latin-1) to be correctly interpreted due to non-standard characters.
-- The 'in_shazam_charts' column contained missing values, which were identified and handled using the .isnull() method.
+- The 'in_shazam_charts' and 'key' column contained missing values, which were identified and handled using the .isnull() method.
 - Missing values in the key column were filled with the string "NAN".
 - Converting 'streams' column into numeric in order to get statistics.
 - The quality of the plot, by adjusting the figure size using Matplotlib's figsize parameter, it can impact the reliability of the analysis.
