@@ -3,10 +3,10 @@
 
 ## :ballot_box: Library Used
 This project utilizes these powerful Python libraries:
-- Numpy: is library for scientific computing in Python. It provides efficient array operations, linear algebra functions, random number generation, and much more.
-- Pandas: is library built on NumPy and provides easy-to-use data structures and data analysis tools for the Python programming language.
-- Matplotlib: is Python 2D plotting library which produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms.
-- Seaborn: is Python data visualization library based on Matplotlib. It provides a high-level interface for creating attractive and informative statistical graphics.
+- Numpy: is a library for scientific computing in Python. It provides efficient array operations, linear algebra functions, random number generation, and much more.
+- Pandas: is a library built on NumPy and provides easy-to-use data structures and data analysis tools for the Python programming language.
+- Matplotlib: is a Python 2D plotting library which produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms.
+- Seaborn: is a Python data visualization library based on Matplotlib. It provides a high-level interface for creating attractive and informative statistical graphics.
 
 ## :interrobang: Guided Questions
 - Overview of Dataset
@@ -39,7 +39,7 @@ This project utilizes these powerful Python libraries:
 ## :star2: Insights
 Here are the specific insights I gained from the EDA:
 - Popularity Trends
-  - The dataset contains 953 rows and 24 columns, with a mix of textual, integer, and missing data.
+  - The dataset contains 953 rows and 24 columns, with a mix of object, integer.
   - The mean stream count is 514,137,424, with a median of 290,530,915 and a standard deviation of 566,856,949.
   - There is a growing trend of artist collaborations over the years, with a peak in recent decades. This suggests a shift towards more collaborative music projects.
   - The top 5 most streamed tracks are "Blinding Lights", "Shape of You", "Someone You Loved", "Dance Monkey", and "Sunflower - Spider-Man: Into the Spider-Verse".
@@ -64,11 +64,10 @@ Here are the specific insights I gained from the EDA:
 ## :dart:  Challenges and Limitations
 I encountered several challenges and limitations:
 - The dataset required specific encoding (latin-1) to be correctly interpreted due to non-standard characters.
-- The in_shazam_charts column contained missing values, which were identified and handled using the .isna() method.
-- Missing values in the key column were filled with the string "N/A".
-- The quality of the data, including potential inconsistencies and errors, can impact the reliability of the analysis.
-- Creating new features or transforming existing ones can enhance the analysis but requires careful consideration.
-- The interpretation of results can be subjective and depend on the specific context and research questions.
+- The 'in_shazam_charts' column contained missing values, which were identified and handled using the .isnull() method.
+- Missing values in the key column were filled with the string "NAN".
+- Converting 'streams' column into numeric in order to get statistics
+- The quality of the plot, by adjusting the figure size using Matplotlib's figsize parameter, it can impact the reliability of the analysis.
 
 ## :card_file_box: File Structure
 - README.md: This file (you're reading it!)
