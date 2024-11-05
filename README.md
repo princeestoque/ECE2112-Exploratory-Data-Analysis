@@ -39,7 +39,7 @@ This project utilizes these powerful Python libraries:
 ## :star2: Insights
 Here are the specific insights I gained from the EDA:
 - Popularity Trends
-  - The dataset contains 953 rows and 24 columns, with a mix of object, integer.
+  - The dataset contains 953 rows and 24 columns, with a mix of object and integer.
   - The mean stream count is 514,137,424, with a median of 290,530,915 and a standard deviation of 566,856,949.
   - There is a growing trend of artist collaborations over the years, with a peak in recent decades. This suggests a shift towards more collaborative music projects.
   - The top 5 most streamed tracks are "Blinding Lights", "Shape of You", "Someone You Loved", "Dance Monkey", and "Sunflower - Spider-Man: Into the Spider-Verse".
@@ -66,7 +66,7 @@ I encountered several challenges and limitations:
 - The dataset required specific encoding (latin-1) to be correctly interpreted due to non-standard characters.
 - The 'in_shazam_charts' column contained missing values, which were identified and handled using the .isnull() method.
 - Missing values in the key column were filled with the string "NAN".
-- Converting 'streams' column into numeric in order to get statistics
+- Converting 'streams' column into numeric in order to get statistics.
 - The quality of the plot, by adjusting the figure size using Matplotlib's figsize parameter, it can impact the reliability of the analysis.
 
 ## :card_file_box: File Structure
